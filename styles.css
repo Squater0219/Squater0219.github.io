@@ -137,6 +137,7 @@ h3 { line-height: 1.35; }
   border: 1px solid var(--line);
   border-radius: 3px;
   background: var(--surface);
+  justify-self: center;
 }
 
 .hero-note {
