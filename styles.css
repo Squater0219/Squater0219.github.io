@@ -122,8 +122,26 @@ h3 { line-height: 1.35; }
   font-size: .93rem;
 }
 
+.hero-side {
+  display: grid;
+  gap: 22px;
+  align-self: center;
+}
+
+.profile-photo {
+  width: 180px;
+  max-width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+}
+
 .hero-note {
-  padding-left: 24px;
+  max-width: 260px;
+  padding-left: 20px;
   border-left: 2px solid var(--line);
   color: var(--muted);
 }
@@ -269,6 +287,8 @@ h3 { line-height: 1.35; }
     gap: 44px;
     padding: 80px 0 68px;
   }
+  .hero-side { max-width: 520px; }
+  .profile-photo { width: 150px; }
   .hero-note { max-width: 520px; }
   .section { padding: 64px 0; }
   .section-heading { display: block; }
